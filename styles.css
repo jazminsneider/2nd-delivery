@@ -1,0 +1,84 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;500&display=swap');
+
+/* CSS Variable */
+:root {
+  --bs-body-color: #2e2e2e;
+
+}
+
+/* Body + Fonts */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--bs-body-color);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Playfair Display", serif;
+}
+
+.btn-outline-dark {
+  --bs-btn-border-color: #000;
+  --bs-btn-color: #000;
+  --bs-btn-hover-bg: #000;
+  --bs-btn-hover-color: #fff;
+  letter-spacing: 0.5px;
+  padding: 10px 22px;
+}
+
+
+/* Required font-size uses */
+h1 { font-size: 2.5rem; }
+p { font-size: 1.1rem; }
+#email { font-size: 1.2rem; }
+
+/* Full-width for image */
+.fullwidth-container {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Hero image */
+.s1-img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* Shadow class modified*/
+.shadow {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.137) !important;
+}
+
+/* Card hover effect */
+.card:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.135) !important;
+}
+
+/* Footer */
+#main-footer {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  p { font-size: 1rem; }
+}
+/* Mobile view - headings smaller */
+@media (max-width: 576px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktop view - headings bigger */
+@media (min-width: 992px) {
+  h3 {
+    font-size: 2.2rem;
+  }
+}
